@@ -55,7 +55,7 @@ if(isset($_SESSION['id'])){
             <div class="container">
                 <div class="row d-flex justify-content-center mt-5">
                     <div class="col-12 col-lg-4 col-md-6 border p-3">
-                        <h3 class="text-center">Add Cli</h3>
+                        <h3 class="text-center">Add Client</h3>
                         <form action="index.php" method="POST">
                             <input type="text" name="name" class="form-control my-2 text-capitalize" placeholder="Name">
                             <input type="text" name="plan" class="form-control my-2 text-capitalize" placeholder="Plan">
