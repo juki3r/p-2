@@ -49,6 +49,7 @@ if(isset($_SESSION['id'])){
                 <!-- NAVBAR -->
                 <div class="col bg-dark">
                     <img src="../assets/images/logo.jpg" alt="" id="logo">
+                    <a href="">Add</a>
                 </div>
             </div>
             <!-- admin -->
