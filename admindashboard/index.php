@@ -50,6 +50,7 @@ if(isset($_SESSION['id'])){
                 <div class="col bg-dark">
                     <img src="../assets/images/logo.jpg" alt="" id="logo">
                     <a href="">Add</a>
+                    <a href="view.php">View</a>
                 </div>
             </div>
             <!-- admin -->
