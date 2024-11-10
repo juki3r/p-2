@@ -41,8 +41,8 @@ if(isset($_SESSION['id'])){
                 <!-- NAVBAR -->
                 <div class="col bg-dark text-light">
                     <img src="../assets/images/logo.jpg" alt="" id="logo">
-                    <a href="index.php"><span>Clients</span></a>
-                    <a href="index.php"><span>Expenses</span></a>
+                    <a href="index.php"><span>Add</span></a>
+                    <a href="view.php"><span>View</span></a>
                 </div>
             </div>
             <!-- INVESTOR -->
