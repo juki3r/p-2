@@ -46,12 +46,12 @@ if(isset($_SESSION['id'])){
     <body>
         <div class="container-fluid">
 
-            <div class="row">
+           
                 <!-- NAVBAR -->
-                <div class="col bg-dark">
+             
                     <?php include  '../header.php'; ?>
-                </div>
-            </div>
+           
+ 
             <!-- admin -->
             <div class="container">
                 <div class="row d-flex justify-content-center mt-5">
