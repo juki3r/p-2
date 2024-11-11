@@ -71,7 +71,7 @@ if(isset($_SESSION['id'])){
                                     <caption>Project-2</caption>
                          
                                         <tr > 
-                                            <th colspan="4" class="text-center bg-info" >Clients</th>
+                                            <th colspan="4" class="text-center bg-primary" style="font-size: 18px !important;">Clients</th>
                                             <th 
                                             <?php 
                                                 if($month == 1 && $month < 2 ){
