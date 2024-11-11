@@ -37,6 +37,7 @@ if(isset($_SESSION['id'])){
             }
             table td{
                 font-weight: 300;
+                font-size: 13px;
             }
 
 
