@@ -56,7 +56,7 @@ if(isset($_SESSION['id'])){
             </div>
             <!-- INVESTOR -->
             <div class="container-fluid mt-4">
-                <span class="text-success"><?php if(empty($_GET['message'])){echo "";}else{echo $_GET['message'];} ?></span>
+                <span class="text-success p-2"><?php if(empty($_GET['message'])){echo "";}else{echo $_GET['message'];} ?></span>
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
@@ -100,8 +100,8 @@ if(isset($_SESSION['id'])){
                                                     echo 'colspan="12"';
                                                 }
                                             ?> 
-                                            class="text-center bg-dark text-light py-2" style="font-size: 18px !important;">Billing</th>
-                                            <th colspan="2" class="text-center bg-warning py-2">Actions</th>
+                                            class="text-center py-2" style="font-size: 18px !important;">Billing</th>
+                                            <th colspan="2" class="text-center py-2">Actions</th>
                                         </tr>
                                     
                                     <tr > 
@@ -149,8 +149,8 @@ if(isset($_SESSION['id'])){
                                             
                                         ?>
         
-                                        <th class="bg-primary">Update</th>
-                                        <th class="bg-danger">Delete</th>
+                                        <th class="">Update</th>
+                                        <th class="">Delete</th>
                                     
                                     </tr>
                                    
