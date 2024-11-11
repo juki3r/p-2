@@ -29,24 +29,7 @@
 </nav>
 
 <script>
-   var navlnks = document.querySelectorAll(".nav a");
-        Array.prototype.map.call(navlnks, function(item) {
-
-            item.addEventListener("click", function(e) {
-
-                var navlnks = document.querySelectorAll(".nav a"); 
-
-                Array.prototype.map.call(navlnks, function(item) {
-
-                    if (item.parentNode.className == "active" || item.parentNode.className == "active open" ) {
-
-                        item.parentNode.className = "";
-
-                    } 
-
-                }); 
-
-                e.currentTarget.parentNode.className = "active";
-            });
-        });
+  $(function() {
+   $('nav a[href^="' + location.pathname.split("/")[2] + '"]').addClass('active');
+});
 </script>
