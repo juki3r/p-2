@@ -14,18 +14,7 @@ if(isset($_SESSION['id'])){
         <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-        
-    
-   
         <style>
-            /* body{
-                background-color:#D3D3D3;
-            } */
-            #logo{
-                width: 150px;
-                height: 100px;
-            }
             table th, table td{
                 padding: 0 0 0 5px !important;
             }
@@ -43,22 +32,12 @@ if(isset($_SESSION['id'])){
                 font-weight: 400;
                 font-size: 14px;
             }
-
-
-            
         </style>
     </head>
     <body>
+    <?php include  '../header.php'; ?>
+    
         <div class="container-fluid">
-
-            <div class="row">
-                <!-- NAVBAR -->
-                <div class="col bg-dark text-light">
-                    <img src="../assets/images/logo.jpg" alt="" id="logo">
-                    <a href="index.php"><span>Add</span></a>
-                    <a href="view.php"><span>View</span></a>
-                </div>
-            </div>
             <!-- INVESTOR -->
             <div class="container-fluid mt-4">
                 <span class="text-success p-2"><?php if(empty($_GET['message'])){echo "";}else{echo $_GET['message'];} ?></span>

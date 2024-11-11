@@ -17,10 +17,6 @@ if(isset($_SESSION['id'])){
     
    
         <style>
-            #logo{
-                width: 150px;
-                height: 100px;
-            }
             table th, table td{
                 padding-left: 10px !important;
             }
@@ -29,23 +25,14 @@ if(isset($_SESSION['id'])){
             }
             .table-bordered > tbody > tr > td {
                 border: 1px solid black;
-            }
-
-
-            
+            } 
         </style>
     </head>
     <body>
-        <div class="container-fluid">
 
-            <div class="row">
-                <!-- NAVBAR -->
-                <div class="col bg-dark text-light">
-                    <img src="../assets/images/logo.jpg" alt="" id="logo">
-                    <a href="index.php"><span>Clients</span></a>
-                    <a href="index.php"><span>Expenses</span></a>
-                </div>
-            </div>
+        <?php include  '../header.php'; ?>
+        
+        <div class="container-fluid">
             <!-- INVESTOR -->
             <div class="container">
                 <div class="col-12">

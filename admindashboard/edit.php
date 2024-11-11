@@ -13,27 +13,10 @@ if(isset($_GET['id'])){
         <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <style>
-            #logo{
-                width: 150px;
-                height: 100px;
-            }
-            
-        </style>
-    </head>
     <body>
+        <?php include  '../header.php'; ?>
+        
         <div class="container-fluid">
-
-            <div class="row">
-                <!-- NAVBAR -->
-                <div class="col bg-dark">
-                    <img src="../assets/images/logo.jpg" alt="" id="logo">
-                    <a href="index.php">Add</a>
-                    <a href="view.php">View</a>
-                </div>
-            </div>
-            <!-- admin -->
-
             <div class="container">
                 <div class="row d-flex justify-content-center mt-5">
                     <div class="col-12 col-lg-4 col-md-6 border rounded shadow p-3 mb-5">
