@@ -117,7 +117,7 @@ if(isset($_SESSION['id'])){
                                             $query_run = mysqli_query($conn, $query);
 
                                             while($row = mysqli_fetch_array($query_run)){
-                                                echo '<td>'.$row['SUM(total_amount)'].'</td>';
+                                                echo '<td>&#8369; '.$row['SUM(total_amount)'].'.00</td>';
                                             
                                             }
                                         ?>
