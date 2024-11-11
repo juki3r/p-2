@@ -19,9 +19,9 @@ if(isset($_SESSION['id'])){
     
    
         <style>
-            body{
+            /* body{
                 background-color:#D3D3D3;
-            }
+            } */
             #logo{
                 width: 150px;
                 height: 100px;
@@ -63,7 +63,7 @@ if(isset($_SESSION['id'])){
             <div class="container-fluid mt-4">
                 <span class="text-success p-2"><?php if(empty($_GET['message'])){echo "";}else{echo $_GET['message'];} ?></span>
                 <div class="col-12">
-                    <div class="card">
+                    <div class="card" style="background-color:#D3D3D3;">
                         <div class="card-header">
                             <h3 class="px-1">
                                 INTERNET SUBSCRIBERS
