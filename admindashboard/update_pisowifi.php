@@ -6,9 +6,7 @@ require '../dataBaseConn.php';
 if(isset($_POST['id'])){
       if(isset($_POST['submit'])){
             $id = mysqli_real_escape_string($conn, $_POST['id']);
-            $name = mysqli_real_escape_string($conn, $_POST['name']);
-            $plan = mysqli_real_escape_string($conn, $_POST['plan']);
-            $due_date = mysqli_real_escape_string($conn, $_POST['due_date']);
+            $vendo_name = mysqli_real_escape_string($conn, $_POST['vendo_name']);
             $january = mysqli_real_escape_string($conn, $_POST['january']);
             $febuary = mysqli_real_escape_string($conn, $_POST['febuary']);
             $march = mysqli_real_escape_string($conn, $_POST['march']);
@@ -22,7 +20,7 @@ if(isset($_POST['id'])){
             $november = mysqli_real_escape_string($conn, $_POST['november']);
             $december = mysqli_real_escape_string($conn, $_POST['december']);
       
-            $query = "UPDATE clients SET name='$name', plan='$plan', due_date='$due_date', january='$january', febuary='$febuary', march='$march', april='$april', may='$may', june='$june', july='$july', august='$august', september='$september', october='$october', november='$november', december='$december'  WHERE id='$id' ";
+            $query = "UPDATE pisowifi SET vendo_name='$vendo_name', january='$january', febuary='$febuary', march='$march', april='$april', may='$may', june='$june', july='$july', august='$august', september='$september', october='$october', november='$november', december='$december'  WHERE id='$id' ";
             $query_run = mysqli_query($conn, $query);
       
             if($query_run){
