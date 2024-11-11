@@ -128,22 +128,22 @@ if(isset($_SESSION['id'])){
                                                 echo '<th class="bg-secondary">June</th>';
                                             }
                                             if(7 <= $month){
-                                                echo '<th class="bg-secondary">July</th>';
+                                                echo '<th class="">July</th>';
                                             }
                                             if(8 <= $month){
-                                                echo '<th class="bg-secondary">August</th>';
+                                                echo '<th class="">August</th>';
                                             }
                                             if(9 <= $month){
-                                                echo '<th class="bg-secondary">September</th>';
+                                                echo '<th class="">September</th>';
                                             }
                                             if(10 <= $month){
-                                                echo '<th class="bg-secondary">October</th>';
+                                                echo '<th class="">October</th>';
                                             }
                                             if(11 <= $month){
-                                                echo '<th class="bg-secondary">November</th>';
+                                                echo '<th class="">November</th>';
                                             }
                                             if(12 <= $month){
-                                                echo '<th class="bg-secondary">December</th>';
+                                                echo '<th class="">December</th>';
                                             } 
                                             
                                         ?>
@@ -165,27 +165,27 @@ if(isset($_SESSION['id'])){
                                                     <td class="text-uppercase"><?=$row['due_date']?></td>
                                                     <?php 
                                                         if(1 <= $month){?>
-                                                            <td class=''><?php if($row['January'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['January']. '.00';}  ?></td>
+                                                            <td class='bg-secondary'><?php if($row['January'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['January']. '.00';}  ?></td>
                                                             <?php
                                                         }
                                                         if(2 <= $month){?>
-                                                            <td class=''><?php if($row['Febuary'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['Febuary']. '.00';}  ?></td>
+                                                            <td class='bg-secondary'><?php if($row['Febuary'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['Febuary']. '.00';}  ?></td>
                                                             <?php
                                                         }
                                                         if(3 <= $month){?>
-                                                           <td class=''><?php if($row['March'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['March']. '.00';}  ?></td>
+                                                           <td class='bg-secondary'><?php if($row['March'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['March']. '.00';}  ?></td>
                                                             <?php
                                                         }
                                                         if(4 <= $month){?>
-                                                            <td class=''><?php if($row['April'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['April']. '.00';}  ?></td>
+                                                            <td class='bg-secondary'><?php if($row['April'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['April']. '.00';}  ?></td>
                                                             <?php
                                                         }
                                                         if(5 <= $month){?>
-                                                            <td class=''><?php if($row['May'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['May']. '.00';}  ?></td>
+                                                            <td class='bg-secondary'><?php if($row['May'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['May']. '.00';}  ?></td>
                                                             <?php
                                                         }
                                                         if(6 <= $month){?>
-                                                            <td class=''><?php if($row['June'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['June']. '.00';}  ?></td>
+                                                            <td class='bg-secondary'><?php if($row['June'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['June']. '.00';}  ?></td>
                                                             <?php
                                                         }
                                                         if(7 <= $month){?>
