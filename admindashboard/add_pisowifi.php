@@ -8,7 +8,7 @@ if(isset($_SESSION['id'])){
     <?php
     if(isset($_POST['submit'])){
         $vendo_name = $_POST['vendo_name'];
-        $sql = mysqli_query($conn, "SELECT * from clients WHERE vendo_name = '$vendo_name'");
+        $sql = mysqli_query($conn, "SELECT * from pisowifi WHERE vendo_name = '$vendo_name'");
         if (mysqli_num_rows($sql) > 0) {
             echo "<script>alert('Vendo already exists !')</script>";
         }else{
@@ -42,8 +42,7 @@ if(isset($_SESSION['id'])){
                     <div class="col-12 col-lg-4 col-md-6 border p-3">
                         <h3 class="text-center">Add Vendo</h3>
                         <form action="add_pisowifi.php" method="POST">
-                            <input type="text" name="vendo_name" class="form-control my-2 text-capitalize" placeholder="Name" required>
-                           
+                            <input type="text" name="vendo_name" class="form-control my-2 text-capitalize" placeholder="Vendo name" required>
                             <input type="submit" name="submit" class="form-control bg-primary text-light" value="Submit">
                         </form>
                     </div>
