@@ -110,40 +110,40 @@ if(isset($_SESSION['id'])){
                                         <th>Due date</th>
                                         <?php 
                                             if(1 <= $month){
-                                                echo '<th class="">January</th>';
+                                                echo '<th class="bg-secondary">January</th>';
                                             }
                                             if(2 <= $month){
-                                                echo '<th class="">Febuary</th>';
+                                                echo '<th class="bg-secondary">Febuary</th>';
                                             }
                                             if(3 <= $month){
-                                                echo '<th class="">March</th>';
+                                                echo '<th class="bg-secondary">March</th>';
                                             }
                                             if(4 <= $month){
-                                                echo '<th class="">April</th>';
+                                                echo '<th class="bg-secondary">April</th>';
                                             }
                                             if(5 <= $month){
-                                                echo '<th class="">May</th>';
+                                                echo '<th class="bg-secondary">May</th>';
                                             }
                                             if(6 <= $month){
-                                                echo '<th class="">June</th>';
+                                                echo '<th class="bg-secondary">June</th>';
                                             }
                                             if(7 <= $month){
-                                                echo '<th class="">July</th>';
+                                                echo '<th class="bg-secondary">July</th>';
                                             }
                                             if(8 <= $month){
-                                                echo '<th class="">August</th>';
+                                                echo '<th class="bg-secondary">August</th>';
                                             }
                                             if(9 <= $month){
-                                                echo '<th class="">September</th>';
+                                                echo '<th class="bg-secondary">September</th>';
                                             }
                                             if(10 <= $month){
-                                                echo '<th class="">October</th>';
+                                                echo '<th class="bg-secondary">October</th>';
                                             }
                                             if(11 <= $month){
-                                                echo '<th class="">November</th>';
+                                                echo '<th class="bg-secondary">November</th>';
                                             }
                                             if(12 <= $month){
-                                                echo '<th class="">December</th>';
+                                                echo '<th class="bg-secondary">December</th>';
                                             } 
                                             
                                         ?>
