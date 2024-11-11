@@ -5,8 +5,8 @@
     }
     
 </style>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark px-0" data-bs-theme="dark">
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,7 @@
     </div>
   </div>
 </nav>
+</div>
 
 
 
