@@ -67,7 +67,7 @@ if(isset($_SESSION['id'])){
                         </div>
                         <div class="card-body">
                             <div class="table-responsive border rounded shadow p-4 my-3" style="height: 100%;">
-                                <table class="table table-bordered table-hover text-nowrap table-sm" id="sortTable">
+                                <table class="table table-bordered table-striped table-hover text-nowrap table-sm">
                                     <caption>Project-2</caption>
                          
                                         <tr > 
