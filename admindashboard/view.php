@@ -63,7 +63,7 @@ if(isset($_SESSION['id'])){
             <div class="container-fluid mt-4">
                 <span class="text-success p-2"><?php if(empty($_GET['message'])){echo "";}else{echo $_GET['message'];} ?></span>
                 <div class="col-12">
-                    <div class="card">
+                    <div class="card mb-5">
                         <div class="card-header">
                             <h3 class="px-1">
                                 INTERNET SUBSCRIBERS
