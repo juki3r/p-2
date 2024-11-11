@@ -17,10 +17,20 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.php"><?php if($_SESSION['usertype'] == 'investor'){ echo 'CLIENTS';}else{ echo 'ADD';} ?></a>
+        <?php if($_SESSION['usertype'] == 'investor'){
+             echo '<a class="nav-link" href="index.php">CLIENTS</a>';
+             }else{ 
+              echo '<a class="nav-link" href="index.php">ADD</a>';
+              } 
+              ?>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="view.php" >VIEW</a>
+          <?php if($_SESSION['usertype'] == 'investor'){
+             echo '<a class="nav-link" href="pisowifi.php">PISOWIFI</a>';
+             }else{ 
+              echo '<a class="nav-link" href="view.php">VIEW</a>';
+              } 
+              ?>
         </li>
       </ul>
     </div>
