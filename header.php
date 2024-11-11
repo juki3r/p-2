@@ -24,5 +24,6 @@
         </li>
       </ul>
     </div>
+    <a href="logout.php" class="float-end">Logout</a>
   </div>
 </nav>
