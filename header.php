@@ -5,7 +5,7 @@
     }
     
 </style>
-<div class="container-fluid-breakpoint">
+
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -31,7 +31,7 @@
     </div>
   </div>
 </nav>
-</div>
+
 
 
 
