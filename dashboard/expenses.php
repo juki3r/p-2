@@ -51,7 +51,7 @@ if(isset($_SESSION['id'])){
                         <div class="card-header">
                             <h3 class="px-1">
                                 EXPENSES
-                                <a href="add_expenses.php" class="btn btn-primary btn-sm float-end">ADD</a>
+                                <a href="pisowifi.php" class="btn btn-primary btn-sm float-end">Back</a>
                             </h3>
                         </div>
                         <div class="card-body p-2">
@@ -64,8 +64,6 @@ if(isset($_SESSION['id'])){
                                         <th>Quantity</th>
                                         <th>Price</th>
                                         <th>Total amount</th>
-                                        <th class="text-success">Update</th>
-                                        <th class="text-danger">Delete</th>
                                     
                                     </tr>
                                    
@@ -81,19 +79,6 @@ if(isset($_SESSION['id'])){
                                                     <td class="text-uppercase"><?= $row['qnty']; ?></td> 
                                                     <td class="text-uppercase">&#8369; <?= $row['price']; ?>.00</td> 
                                                     <td class="text-uppercase">&#8369; <?= $row['total_amount']; ?>.00</td> 
-                                                    <td class="text-center"><a href="edit_expenses.php?id=<?=$row['id']?>">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square text-success" viewBox="0 0 16 16">
-                                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-                                                        </svg>
-                                                    </a></td> 
-                                                    <td class="text-center"><a href="delete_expenses.php?id=<?=$row['id']?>">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash text-danger" viewBox="0 0 16 16">
-                                                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
-                                                            <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
-                                                        </svg>
-                                                        </a>
-                                                    </td>
                                                 </tr>
                                                 <?php
                                                 
@@ -105,10 +90,10 @@ if(isset($_SESSION['id'])){
                                     
                                     ?>
                                     <tr>
-                                    <td colspan="7" style="color:transparent">x</td>
+                                    <td colspan="5" style="color:transparent">x</td>
                                     </tr>
                                     <tr>
-                                    <td colspan="7" style="color:transparent">x</td>
+                                    <td colspan="5" style="color:transparent">x</td>
                                     </tr>
                                     <tr>
                                         <td colspan="4">TOTAL EXPENSES</td>
@@ -117,7 +102,7 @@ if(isset($_SESSION['id'])){
                                             $query_run = mysqli_query($conn, $query);
 
                                             while($row = mysqli_fetch_array($query_run)){
-                                                echo '<td colspan="3">&#8369; '.$row['SUM(total_amount)'].'.00</td>';
+                                                echo '<td colspan="1">&#8369; '.$row['SUM(total_amount)'].'.00</td>';
                                             
                                             }
                                         ?>
