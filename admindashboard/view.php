@@ -269,7 +269,60 @@ if(isset($_SESSION['id'])){
                                             <td colspan="2" style="color:transparent">x</td>
                                         </tr>
                                         <tr class="mt-4">
-                                            <td colspan="4" class="text-center">Total</td>
+                                            <td colspan="4" class="text-center">SUM</td>
+
+                                            <?php
+                                                $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
+                                                                    SUM(May), SUM(June), SUM(July), SUM(August),
+                                                                    SUM(September), SUM(October), SUM(November), SUM(December)
+                                                                    from clients";
+                                                $query_run = mysqli_query($conn, $query);
+
+                                                while($row = mysqli_fetch_array($query_run)){
+                                                    if(1 <= $month){
+                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(January)'].'.00</td>';
+                                                    }
+                                                    if(2 <= $month){
+                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(Febuary)'].'.00</td>';
+                                                    }
+                                                    if(3 <= $month){
+                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(March)'].'.00</td>';
+                                                    }
+                                                    if(4 <= $month){
+                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(April)'].'.00</td>';
+                                                    }
+                                                    if(5 <= $month){
+                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(May)'].'.00</td>';
+                                                    }
+                                                    if(6 <= $month){
+                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(June)'].'.00</td>';
+                                                    }
+                                                    if(7 <= $month){
+                                                        echo '<td>&#8369; '.$row['SUM(July)'].'.00</td>';
+                                                    }
+                                                    if(8 <= $month){
+                                                        echo '<td>&#8369; '.$row['SUM(August)'].'.00</td>';
+                                                    }
+                                                    if(9 <= $month){
+                                                        echo '<td>&#8369; '.$row['SUM(September)'].'.00</td>';
+                                                    }
+                                                    if(10 <= $month){
+                                                        echo '<td>&#8369; '.$row['SUM(October)'].'.00</td>';
+                                                    }
+                                                    if(11 <= $month){
+                                                        echo '<td>&#8369; '.$row['SUM(November)'].'.00</td>';
+                                                    }
+                                                    if(12 <= $month){
+                                                        echo '<td>&#8369; '.$row['SUM(December)'].'.00</td>';
+                                                    }
+                                                   
+                                                }
+                                            ?>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr class="mt-4">
+                                            <td colspan="4" class="text-center">TOTAL</td>
 
                                             <?php
                                                 $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
