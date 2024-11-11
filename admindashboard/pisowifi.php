@@ -15,6 +15,11 @@ if(isset($_SESSION['id'])){
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <style>
+            body{
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
             table th, table td{
                 padding: 0 0 0 5px !important;
             }
