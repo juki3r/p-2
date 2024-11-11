@@ -34,10 +34,11 @@ if(isset($_SESSION['id'])){
             }
             table th{
                 font-weight: 500;
+                font-size: 16px;
             }
             table td{
                 font-weight: 300;
-                font-size: 13px;
+                font-size: 14px;
             }
 
 
