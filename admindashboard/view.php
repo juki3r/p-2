@@ -62,8 +62,8 @@ if(isset($_SESSION['id'])){
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3>
-                                Clients
+                            <h3 class="px-2">
+                                Internet Subscribers
                                 <a href="index.php" class="btn btn-primary btn-sm float-end">Back</a>
                             </h3>
                         </div>
