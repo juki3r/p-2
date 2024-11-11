@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href=<?php if($_SESSION['usertype'] == 'investor'){ echo "dashboard";}else{ echo "admindashboard";} ?>>
+          <a class="nav-link active" aria-current="page" href="index.php">
             <img src="../assets/images/logo.jpg" alt="" id="logo">
           </a>
         </li>
