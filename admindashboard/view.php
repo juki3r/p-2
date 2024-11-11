@@ -318,8 +318,8 @@ if(isset($_SESSION['id'])){
                                                    
                                                 }
                                             ?>
-                                            <td></td>
-                                            <td></td>
+                                            <td colspan="2"></td>
+                                          
                                         </tr>
                                         <tr class="mt-4" style="border: 1px solid black;">
                                             <td colspan="4" class="text-center bg-success">TOTAL</td>
