@@ -199,7 +199,7 @@ if(isset($_SESSION['id'])){
                                                         } 
                                                         
                                                     ?>
-                                                    <td class="text-center text-success">Yes</td> 
+                                                    <td class=" text-success">Yes</td> 
                                                     
                                                 </tr>
                                                 <?php
