@@ -336,37 +336,37 @@ if(isset($_SESSION['id'])){
                                                         echo '<td style="border:none"></td>';
                                                     }
                                                     if(2 <= $month){
-                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(Febuary)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(3 <= $month){
-                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(March)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(4 <= $month){
-                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(April)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(5 <= $month){
-                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(May)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(6 <= $month){
-                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(June)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(7 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(July)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(8 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(August)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(9 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(September)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(10 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(October)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(11 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(November)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(12 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(December)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                    
                                                 }
