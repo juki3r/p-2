@@ -36,7 +36,7 @@
           <?php if($_SESSION['usertype'] == 'investor'){
              echo '<a class="nav-link" href="expenses.php">EXPENSES</a>';
              }else{ 
-              // echo '<a class="nav-link" href="view.php">VIEW</a>';
+              echo '<a class="nav-link" href="pisowifi.php">PISOWIFI</a>';
               } 
               ?>
         </li>
