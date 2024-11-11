@@ -44,12 +44,13 @@ if(isset($_SESSION['id'])){
         </style>
     </head>
     <body>
+        <?php include  '../header.php'; ?>
         <div class="container-fluid">
 
            
                 <!-- NAVBAR -->
              
-                    <?php include  '../header.php'; ?>
+                    
            
  
             <!-- admin -->
