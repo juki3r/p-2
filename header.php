@@ -40,6 +40,14 @@
               } 
               ?>
         </li>
+        <li class="nav-item">
+          <?php if($_SESSION['usertype'] == 'investor'){
+            //  echo '<a class="nav-link" href="expenses.php">EXPENSES</a>';
+             }else{ 
+              echo '<a class="nav-link" href="expenses.php">EXPENSES</a>';
+              } 
+              ?>
+        </li>
       </ul>
     </div>
     <a href="logout.php" class="float-end px-2 text-danger">Logout</a>
