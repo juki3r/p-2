@@ -238,12 +238,12 @@ if(isset($_SESSION['id'])){
                                             <td style="color:transparent">x</td>
                                             <td style="color:transparent">x</td>
                                             <td style="color:transparent">x</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
@@ -256,12 +256,12 @@ if(isset($_SESSION['id'])){
                                             <td style="color:transparent">x</td>
                                             <td style="color:transparent">x</td>
                                             <td style="color:transparent">x</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
-                                            <td class="text-center">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
+                                            <td class="text-center bg-secondary">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
@@ -282,22 +282,22 @@ if(isset($_SESSION['id'])){
 
                                                 while($row = mysqli_fetch_array($query_run)){
                                                     if(1 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(January)'].'.00</td>';
+                                                        echo '<td class="bg-secondary">&#8369; '.$row['SUM(January)'].'.00</td>';
                                                     }
                                                     if(2 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(Febuary)'].'.00</td>';
+                                                        echo '<td class="bg-secondary">&#8369; '.$row['SUM(Febuary)'].'.00</td>';
                                                     }
                                                     if(3 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(March)'].'.00</td>';
+                                                        echo '<td class="bg-secondary">&#8369; '.$row['SUM(March)'].'.00</td>';
                                                     }
                                                     if(4 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(April)'].'.00</td>';
+                                                        echo '<td class="bg-secondary">&#8369; '.$row['SUM(April)'].'.00</td>';
                                                     }
                                                     if(5 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(May)'].'.00</td>';
+                                                        echo '<td class="bg-secondary">&#8369; '.$row['SUM(May)'].'.00</td>';
                                                     }
                                                     if(6 <= $month){
-                                                        echo '<td>&#8369; '.$row['SUM(June)'].'.00</td>';
+                                                        echo '<td class="bg-secondary">&#8369; '.$row['SUM(June)'].'.00</td>';
                                                     }
                                                     if(7 <= $month){
                                                         echo '<td>&#8369; '.$row['SUM(July)'].'.00</td>';
