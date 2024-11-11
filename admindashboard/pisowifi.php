@@ -55,7 +55,7 @@ if(isset($_SESSION['id'])){
                                     <caption>Project-2</caption>
                          
                                         <tr > 
-                                            <th colspan="4" class="text-center text-light py-3" style="font-size: 20px !important; background-color:#091057">Clients</th>
+                                            <th colspan="2" class="text-center text-light py-3" style="font-size: 20px !important; background-color:#091057">VENDO</th>
                                             <th 
                                             <?php 
                                                 if($month == 1 && $month < 2 ){
@@ -91,8 +91,6 @@ if(isset($_SESSION['id'])){
                                     <tr > 
                                         <th>No.</th>
                                         <th>Name</th>
-                                        <th>Internet Plan</th>
-                                        <th>Due date</th>
                                         <?php 
                                             if(1 <= $month){
                                                 echo '<th class="bg-warning">January</th>';
@@ -139,16 +137,14 @@ if(isset($_SESSION['id'])){
                                     </tr>
                                    
                                     <?php
-                                        $query = "SELECT * FROM clients";
+                                        $query = "SELECT * FROM pisowifi";
                                         $results = mysqli_query($conn, $query);
                                         if(mysqli_num_rows($results) > 0){
                                             foreach($results as $row){
                                                 ?>
                                                 <tr>
                                                     <td class="text-uppercase"><?= $row['id']; ?></td> 
-                                                    <td class="text-uppercase"><?= $row['name']; ?></td> 
-                                                    <td class="text-uppercase"><?=$row['plan'];?></td>
-                                                    <td class="text-uppercase"><?=$row['due_date']?></td>
+                                                    <td class="text-uppercase"><?= $row['vendo_name']; ?></td> 
                                                     <?php 
                                                         if(1 <= $month){?>
                                                             <td class='bg-warning'><?php if($row['January'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['January']. '.00';}  ?></td>
