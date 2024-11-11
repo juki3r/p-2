@@ -15,9 +15,9 @@ if(isset($_POST['id'])){
             $query_run = mysqli_query($conn, $query);
       
             if($query_run){
-                  header("Location: pisowifi.php?message=Update successfully");
+                  header("Location: expenses.php?message=Update successfully");
             }else{
-                  header("Location: pisowifi.php?message=Update Error");
+                  header("Location: expenses.php?message=Update Error");
             }
             
       }else{
