@@ -2,6 +2,7 @@
     #logo{
         width: 150px;
         height: 100px;
+        background-color: red;
     }
     
 </style>
