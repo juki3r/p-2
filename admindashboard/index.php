@@ -37,6 +37,7 @@ if(isset($_SESSION['id'])){
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
         body{
+            height: 100vh;
             display: flex;
             flex-direction: column;
         }
