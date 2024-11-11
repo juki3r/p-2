@@ -60,7 +60,9 @@ if(isset($_SESSION['id'])){
                 </div>     
             </div>
         </div>
-        <?php include '../footer.php';?>
+        <div class="mt-auto">
+            <?php include '../footer.php';?>
+        </div>
         
         
 
