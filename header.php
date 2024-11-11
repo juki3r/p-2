@@ -17,10 +17,10 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">ADD</a>
+          <a class="nav-link active" aria-current="page" href="index.php" data-toggle="tab">ADD</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="view.php">VIEW</a>
+          <a class="nav-link" href="view.php" data-toggle="tab">VIEW</a>
         </li>
       </ul>
     </div>
