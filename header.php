@@ -6,7 +6,7 @@
     
 </style>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark p-0" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand p-0" href="index.php">
     <img src="../assets/images/logo.jpg" alt="" id="logo">
