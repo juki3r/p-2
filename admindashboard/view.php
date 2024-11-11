@@ -34,7 +34,7 @@ if(isset($_SESSION['id'])){
             }
             table th{
                 font-weight: 500;
-                font-size: 16px;
+                font-size: 18px;
             }
             table td{
                 font-weight: 400;
@@ -73,7 +73,7 @@ if(isset($_SESSION['id'])){
                                     <caption>Project-2</caption>
                          
                                         <tr > 
-                                            <th colspan="4" class="text-center text-light py-3" style="font-size: 18px !important; background-color:#091057">Clients</th>
+                                            <th colspan="4" class="text-center text-light py-3" style="font-size: 20px !important; background-color:#091057">Clients</th>
                                             <th 
                                             <?php 
                                                 if($month == 1 && $month < 2 ){
@@ -102,8 +102,8 @@ if(isset($_SESSION['id'])){
                                                     echo 'colspan="12"';
                                                 }
                                             ?> 
-                                            class="text-center text-light py-3" style="font-size: 18px !important; background-color:#740938;">Billing</th>
-                                            <th colspan="2" class="text-center py-3 bg-black text-light" style="background-color:#433878;">Actions</th>
+                                            class="text-center text-light py-3" style="font-size: 20px !important; background-color:#740938;">Billing</th>
+                                            <th colspan="2" class="text-center py-3 text-light" style="font-size: 20px !important; background-color:#433878;">Actions</th>
                                         </tr>
                                     
                                     <tr > 
