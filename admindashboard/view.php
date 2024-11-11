@@ -333,7 +333,7 @@ if(isset($_SESSION['id'])){
 
                                                 while($row = mysqli_fetch_array($query_run)){
                                                     if(1 <= $month){
-                                                        echo '<td class="bg-warning">&#8369; '.$row['SUM(January)'].'.00</td>';
+                                                        echo '<td style="border:none"></td>';
                                                     }
                                                     if(2 <= $month){
                                                         echo '<td class="bg-warning">&#8369; '.$row['SUM(Febuary)'].'.00</td>';
