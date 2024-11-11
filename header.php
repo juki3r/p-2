@@ -17,13 +17,18 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php" data-toggle="tab">ADD</a>
+          <a class="nav-link active" aria-current="page" href="index.php">ADD</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="view.php" data-toggle="tab">VIEW</a>
+          <a class="nav-link" href="view.php" >VIEW</a>
         </li>
       </ul>
     </div>
     <a href="logout.php" class="float-end px-2 text-danger">Logout</a>
   </div>
 </nav>
+
+<script>
+  var active = window.location.pathname;
+  $(".nav a[href|='" + active + "']").parent().addClass("active");
+</script>
