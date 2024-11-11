@@ -321,7 +321,7 @@ if(isset($_SESSION['id'])){
                                             <td></td>
                                             <td></td>
                                         </tr>
-                                        <tr class="mt-4">
+                                        <tr class="mt-4 border">
                                             <td colspan="4" class="text-center bg-success">TOTAL</td>
 
                                             <?php
