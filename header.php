@@ -3,6 +3,7 @@
         width: 150px;
         height: 100px;
         background-color: red;
+        padding: 0;
     }
     
 </style>
