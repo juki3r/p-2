@@ -371,7 +371,7 @@ if(isset($_SESSION['id'])){
                                                    
                                                 }
                                                 $total = $row['SUM(October)'] + $row['SUM(September)'];
-                                                echo '<td colspan="2">'.$total.'</td>';
+                                                echo '<td colspan="2">'.$row['SUM(October)'].'</td>';
                                             ?>
                                             
                                             
