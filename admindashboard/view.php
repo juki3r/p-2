@@ -23,9 +23,9 @@ if(isset($_SESSION['id'])){
                 width: 150px;
                 height: 100px;
             }
-            table th, table td{
+            /* table th, table td{
                 padding-left: 10px !important;
-            }
+            } */
             .table-bordered > tbody > tr > th {
                 border: 1px solid black;
             }
