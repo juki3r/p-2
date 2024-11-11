@@ -151,8 +151,8 @@ if(isset($_SESSION['id'])){
                                             
                                         ?>
         
-                                        <th class="">Update</th>
-                                        <th class="">Delete</th>
+                                        <th class="text-success">Update</th>
+                                        <th class="text-danger">Delete</th>
                                     
                                     </tr>
                                    
