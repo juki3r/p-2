@@ -49,6 +49,7 @@ if(isset($_SESSION['id'])){
                 </div>     
             </div>
         </div>
+        <?php include '../footer.php';?>
         
         
 
