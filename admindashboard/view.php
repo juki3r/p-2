@@ -102,7 +102,7 @@ if(isset($_SESSION['id'])){
                                                     echo 'colspan="12"';
                                                 }
                                             ?> 
-                                            class="text-center text-light py-2" style="font-size: 18px !important; background-color:740938;">Billing</th>
+                                            class="text-center text-light py-2" style="font-size: 18px !important; background-color:#740938;">Billing</th>
                                             <th colspan="2" class="text-center py-2 bg-black text-light">Actions</th>
                                         </tr>
                                     
