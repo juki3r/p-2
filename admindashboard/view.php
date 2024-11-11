@@ -19,6 +19,9 @@ if(isset($_SESSION['id'])){
     
    
         <style>
+            body{
+                background-color:#D3D3D3;
+            }
             #logo{
                 width: 150px;
                 height: 100px;
