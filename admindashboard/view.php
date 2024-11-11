@@ -322,7 +322,7 @@ if(isset($_SESSION['id'])){
                                           
                                         </tr>
                                         <tr class="mt-4" style="border: 1px solid black;">
-                                            <td colspan="4" class="text-center bg-success text-light">TOTAL</td>
+                                            <td colspan="4" class="text-center bg-success text-light py-2">TOTAL</td>
 
                                             <?php
                                                 $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
@@ -371,7 +371,7 @@ if(isset($_SESSION['id'])){
                                                     $total = $row['SUM(January)'] + $row['SUM(Febuary)']+ $row['SUM(March)']+ $row['SUM(April)']
                                                             + $row['SUM(May)']+ $row['SUM(June)']+ $row['SUM(July)']+ $row['SUM(August)']
                                                             + $row['SUM(September)']+ $row['SUM(October)']+ $row['SUM(November)']+ $row['SUM(December)'];
-                                                    echo '<td colspan="2" class="text-center bg-success text-light"><strong>'.$total.'</strong></td>';
+                                                    echo '<td colspan="2" class="text-center bg-success text-light py-2"><strong>&#8369; '.$total.'.00</strong></td>';
                                                 }
                                                 
                                             ?>
