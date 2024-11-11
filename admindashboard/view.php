@@ -55,7 +55,7 @@ if(isset($_SESSION['id'])){
                 </div>
             </div>
             <!-- INVESTOR -->
-            <div class="container mt-4">
+            <div class="container-fluid mt-4">
                 <span class="text-success"><?php if(empty($_GET['message'])){echo "";}else{echo $_GET['message'];} ?></span>
                 <div class="col-12">
                     <div class="card">
