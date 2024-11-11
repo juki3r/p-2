@@ -73,7 +73,7 @@ if(isset($_SESSION['id'])){
                                     <caption>Project-2</caption>
                          
                                         <tr > 
-                                            <th colspan="4" class="text-center text-light py-2" style="font-size: 18px !important; background-color:#091057">Clients</th>
+                                            <th colspan="4" class="text-center text-light py-3" style="font-size: 18px !important; background-color:#091057">Clients</th>
                                             <th 
                                             <?php 
                                                 if($month == 1 && $month < 2 ){
@@ -102,8 +102,8 @@ if(isset($_SESSION['id'])){
                                                     echo 'colspan="12"';
                                                 }
                                             ?> 
-                                            class="text-center text-light py-2" style="font-size: 18px !important; background-color:#740938;">Billing</th>
-                                            <th colspan="2" class="text-center py-2 bg-black text-light">Actions</th>
+                                            class="text-center text-light py-3" style="font-size: 18px !important; background-color:#740938;">Billing</th>
+                                            <th colspan="2" class="text-center py-3 bg-black text-light" style="background-color:#433878;">Actions</th>
                                         </tr>
                                     
                                     <tr > 
