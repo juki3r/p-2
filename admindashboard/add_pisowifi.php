@@ -12,10 +12,10 @@ if(isset($_SESSION['id'])){
         if (mysqli_num_rows($sql) > 0) {
             echo "<script>alert('Vendo already exists !')</script>";
         }else{
-            $sql = "INSERT INTO clients (vendo_name) VALUES('$vendo_name')";
+            $sql = "INSERT INTO pisowifi (vendo_name) VALUES('$vendo_name')";
             $query = mysqli_query($conn, $sql);
             if($query){
-                echo "<script>alert('Data added !')</script>";
+                echo "<script>alert('Vendo added !')</script>";
             }else{
                 echo "<script>alert('Please try again !')</script>";
             }
