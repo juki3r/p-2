@@ -121,7 +121,6 @@ if(isset($_SESSION['id'])){
                                             
                                             }
                                         ?>
-                                        <td colspan="2"></td>
                                     </tr>
                                        
                                        
