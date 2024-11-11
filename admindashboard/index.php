@@ -59,9 +59,9 @@ if(isset($_SESSION['id'])){
                     <div class="col-12 col-lg-4 col-md-6 border p-3">
                         <h3 class="text-center">Add Client</h3>
                         <form action="index.php" method="POST">
-                            <input type="text" name="name" class="form-control my-2 text-capitalize" placeholder="Name">
-                            <input type="text" name="plan" class="form-control my-2 text-capitalize" placeholder="Plan">
-                            <input type="text" name="due_date" class="form-control my-2 text-capitalize" placeholder="Due date">
+                            <input type="text" name="name" class="form-control my-2 text-capitalize" placeholder="Name" required>
+                            <input type="text" name="plan" class="form-control my-2 text-capitalize" placeholder="Plan" required>
+                            <input type="text" name="due_date" class="form-control my-2 text-capitalize" placeholder="Due date" required>
                             <input type="submit" name="submit" class="form-control bg-primary text-light" value="Submit">
                         </form>
                     </div>

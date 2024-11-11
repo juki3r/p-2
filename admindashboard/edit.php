@@ -47,14 +47,31 @@ if(isset($_GET['id'])){
                                     $client = mysqli_fetch_array($query_run);
 
                                     ?>
-                                    <form action="edit.php" method="POST">
+                                    <form action="update_client.php" method="POST">
                                         <input type="hidden" name="id" class="form-control my-2 text-capitalize" value="<?= $client_id ?>">
+
                                         <label for="name" class="mx-1 text-secondary">Name</label>
                                         <input type="text" name="name" class="form-control my-2 text-capitalize" value="<?= $client['name'] ?>">
+
                                         <label for="plan" class="mx-1 text-secondary">Plan</label>
                                         <input type="text" name="plan" class="form-control my-2 text-capitalize"  value="<?= $client['plan'] ?>">
                                         <label for="due_date" class="mx-1 text-secondary">Due date</label>
                                         <input type="text" name="due_date" class="form-control my-2 text-capitalize" value="<?= $client['due_date'] ?>">
+
+
+                                        
+                                        <label for="january" class="mx-1 text-secondary">January Bill</label>
+                                        <input type="text" name="january" class="form-control my-2 text-capitalize"  value="<?php if($client['January'] == NULL){echo '0';}else{echo $client['January'];} ?>">
+                                        <label for="febuary" class="mx-1 text-secondary">Febuary Bill</label>
+                                        <input type="text" name="febuary" class="form-control my-2 text-capitalize"  value="<?php if($client['Febuary'] == NULL){echo '0';}else{echo $client['Febuary'];} ?>">
+                                        <label for="march" class="mx-1 text-secondary">March Bill</label>
+                                        <input type="text" name="march" class="form-control my-2 text-capitalize"  value="<?php if($client['March'] == NULL){echo '0';}else{echo $client['March'];} ?>">
+                                        <label for="april" class="mx-1 text-secondary">April Bill</label>
+                                        <input type="text" name="april" class="form-control my-2 text-capitalize"  value="<?php if($client['April'] == NULL){echo '0';}else{echo $client['April'];} ?>">
+                                        <label for="may" class="mx-1 text-secondary">May Bill</label>
+                                        <input type="text" name="may" class="form-control my-2 text-capitalize"  value="<?php if($client['May'] == NULL){echo '0';}else{echo $client['May'];} ?>">
+                                        <label for="june" class="mx-1 text-secondary">June Bill</label>
+                                        <input type="text" name="june" class="form-control my-2 text-capitalize"  value="<?php if($client['June'] == NULL){echo '0';}else{echo $client['June'];} ?>">
                                         <label for="july" class="mx-1 text-secondary">July Bill</label>
                                         <input type="text" name="july" class="form-control my-2 text-capitalize"  value="<?php if($client['July'] == NULL){echo '0';}else{echo $client['July'];} ?>">
                                         <label for="august" class="mx-1 text-secondary">August Bill</label>
@@ -63,7 +80,12 @@ if(isset($_GET['id'])){
                                         <input type="text" name="september" class="form-control my-2 text-capitalize" value="<?php if($client['September'] == NULL){echo '0';}else{echo $client['September'];}?>">
                                         <label for="october" class="mx-1 text-secondary">October Bill</label>
                                         <input type="text" name="october" class="form-control my-2 text-capitalize"  value="<?php if($client['October'] == NULL){echo '0';}else{echo $client['October'];}?>">
-                                        <input type="submit" name="update_client" class="form-control bg-primary text-light" value="Submit">
+                                        
+                                        <label for="november" class="mx-1 text-secondary">November Bill</label>
+                                        <input type="text" name="november" class="form-control my-2 text-capitalize"  value="<?php if($client['November'] == NULL){echo '0';}else{echo $client['November'];}?>">
+                                        <label for="december" class="mx-1 text-secondary">December Bill</label>
+                                        <input type="text" name="december" class="form-control my-2 text-capitalize"  value="<?php if($client['December'] == NULL){echo '0';}else{echo $client['December'];}?>">
+                                        <input type="submit" name="submit" class="form-control bg-primary text-light" value="Submit">
                                     </form>
 
                                 <?php
