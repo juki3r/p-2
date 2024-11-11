@@ -253,7 +253,7 @@ if(isset($_SESSION['id'])){
                                                 $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
                                                                     SUM(May), SUM(June), SUM(July), SUM(August),
                                                                     SUM(September), SUM(October), SUM(November), SUM(December)
-                                                                    from clients";
+                                                                    from pisowifi";
                                                 $query_run = mysqli_query($conn, $query);
 
                                                 while($row = mysqli_fetch_array($query_run)){
