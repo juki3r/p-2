@@ -333,40 +333,40 @@ if(isset($_SESSION['id'])){
 
                                                 while($row = mysqli_fetch_array($query_run)){
                                                     if(1 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(2 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(3 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(4 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(5 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(6 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(7 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(8 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(9 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(10 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(11 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                     if(12 <= $month){
-                                                        echo '<td style="border:none"></td>';
+                                                        echo '<td style="border:none">&#8594</td>';
                                                     }
                                                    
                                                 }
