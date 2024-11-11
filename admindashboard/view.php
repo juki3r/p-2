@@ -237,9 +237,7 @@ if(isset($_SESSION['id'])){
                                     
                                         ?>
                                         <tr class="mt-4" >
-                                            <td style="color:transparent">x</td>
-                                            <td style="color:transparent">x</td>
-                                            <td style="color:transparent">x</td>
+                                            <td rowspan="4" style="color:transparent">x</td>
                                             <td class="text-center bg-secondary">&#8595;</td>
                                             <td class="text-center bg-secondary">&#8595;</td>
                                             <td class="text-center bg-secondary">&#8595;</td>
@@ -251,13 +249,10 @@ if(isset($_SESSION['id'])){
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
-                                            <td style="color:transparent">x</td>
-                                            <td style="color:transparent">x</td>
+                                            <td rowspan="2" style="color:transparent">x</td>
                                         </tr>
                                         <tr class="mt-4" >
-                                            <td style="color:transparent">x</td>
-                                            <td style="color:transparent">x</td>
-                                            <td style="color:transparent">x</td>
+                                        <td rowspan="4" style="color:transparent">x</td>
                                             <td class="text-center bg-secondary">&#8595;</td>
                                             <td class="text-center bg-secondary">&#8595;</td>
                                             <td class="text-center bg-secondary">&#8595;</td>
@@ -269,11 +264,10 @@ if(isset($_SESSION['id'])){
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
                                             <td class="text-center">&#8595;</td>
-                                            <td style="color:transparent">x</td>
-                                            <td style="color:transparent">x</td>
+                                            <td rowspan="2" style="color:transparent">x</td>
                                         </tr>
                                         <tr class="mt-4">
-                                            <td colspan="3" class="text-center">Total</td>
+                                            <td colspan="4" class="text-center">Total</td>
 
                                             <?php
                                                 $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
