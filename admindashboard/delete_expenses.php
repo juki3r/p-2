@@ -6,9 +6,9 @@ if(isset($_GET['id'])){
     $query = "DELETE FROM expenses WHERE id='$id'";
     $query_run = mysqli_query($conn, $query);
     if($query_run){
-        header("Location: view.php?message=Delete successfully");
+        header("Location: expenses.php?message=Delete successfully");
     }else{
-            header("Location: view.php?message=Delete Error");
+            header("Location: expenses.php?message=Delete Error");
     }
   
 }else{
