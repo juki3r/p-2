@@ -6,9 +6,9 @@
     
 </style>
 
-<nav class="navbar navbar-expand-md bg-body-tertiary bg-dark" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">
+    <a class="navbar-brand p-0" href="index.php">
     <img src="../assets/images/logo.jpg" alt="" id="logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
