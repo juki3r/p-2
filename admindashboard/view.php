@@ -15,6 +15,7 @@ if(isset($_SESSION['id'])){
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+        
     
    
         <style>
@@ -68,81 +69,81 @@ if(isset($_SESSION['id'])){
                             <div class="table-responsive border rounded shadow p-4 my-3" style="height: 100%;">
                                 <table class="table table-bordered table-hover text-nowrap table-sm" id="sortTable">
                                     <caption>Project-2</caption>
-                                    <tr > 
-                                        <th colspan="3" class="text-center bg-info" >Clients</th>
-                                        <th 
-                                        <?php 
-                                            if($month == 1 && $month < 2 ){
-                                                echo 'colspan="1"';
-                                            }else if($month == 2 && $month < 3){
-                                                echo 'colspan="2"';
-                                            }else if($month == 3 && $month < 4){
-                                                echo 'colspan="3"';
-                                            }else if($month == 4 && $month < 5){
-                                                echo 'colspan="4"';
-                                            }else if($month == 5 && $month < 6){
-                                                echo 'colspan="5"';
-                                            }else if($month == 6 && $month < 7){
-                                                echo 'colspan="6"';
-                                            }else if($month == 7 && $month < 8){
-                                                echo 'colspan="7"';
-                                            }else if($month == 8 && $month < 9){
-                                                echo 'colspan="8"';
-                                            }else if($month == 9 && $month < 10){
-                                                echo 'colspan="9"';
-                                            }else if($month == 10 && $month < 11){
-                                                echo 'colspan="10"';
-                                            }else if($month == 11 && $month < 12){
-                                                echo 'colspan="11"';
-                                            }else if($month >= 12){
-                                                echo 'colspan="12"';
-                                            }
-                                        ?> 
-                                        
-        
-                                        class="text-center bg-secondary">Billing</th>
-                                        <th colspan="2" class="text-center bg-warning">Actions</th>
-                                    </tr>
+                         
+                                        <tr > 
+                                            <th colspan="3" class="text-center bg-info" >Clients</th>
+                                            <th 
+                                            <?php 
+                                                if($month == 1 && $month < 2 ){
+                                                    echo 'colspan="1"';
+                                                }else if($month == 2 && $month < 3){
+                                                    echo 'colspan="2"';
+                                                }else if($month == 3 && $month < 4){
+                                                    echo 'colspan="3"';
+                                                }else if($month == 4 && $month < 5){
+                                                    echo 'colspan="4"';
+                                                }else if($month == 5 && $month < 6){
+                                                    echo 'colspan="5"';
+                                                }else if($month == 6 && $month < 7){
+                                                    echo 'colspan="6"';
+                                                }else if($month == 7 && $month < 8){
+                                                    echo 'colspan="7"';
+                                                }else if($month == 8 && $month < 9){
+                                                    echo 'colspan="8"';
+                                                }else if($month == 9 && $month < 10){
+                                                    echo 'colspan="9"';
+                                                }else if($month == 10 && $month < 11){
+                                                    echo 'colspan="10"';
+                                                }else if($month == 11 && $month < 12){
+                                                    echo 'colspan="11"';
+                                                }else if($month >= 12){
+                                                    echo 'colspan="12"';
+                                                }
+                                            ?> 
+                                            class="text-center bg-secondary">Billing</th>
+                                            <th colspan="2" class="text-center bg-warning">Actions</th>
+                                        </tr>
+                                    
                                     <tr > 
                                         <th>Name</th>
                                         <th>Internet Plan</th>
                                         <th>Due date</th>
                                         <?php 
                                             if(1 <= $month){
-                                                echo '<th class="bg-danger">January</th>';
+                                                echo '<th class="">January</th>';
                                             }
                                             if(2 <= $month){
-                                                echo '<th class="bg-danger">Febuary</th>';
+                                                echo '<th class="">Febuary</th>';
                                             }
                                             if(3 <= $month){
-                                                echo '<th class="bg-danger">March</th>';
+                                                echo '<th class="">March</th>';
                                             }
                                             if(4 <= $month){
-                                                echo '<th class="bg-danger">April</th>';
+                                                echo '<th class="">April</th>';
                                             }
                                             if(5 <= $month){
-                                                echo '<th class="bg-danger">May</th>';
+                                                echo '<th class="">May</th>';
                                             }
                                             if(6 <= $month){
-                                                echo '<th class="bg-danger">June</th>';
+                                                echo '<th class="">June</th>';
                                             }
                                             if(7 <= $month){
-                                                echo '<th class="bg-danger">July</th>';
+                                                echo '<th class="">July</th>';
                                             }
                                             if(8 <= $month){
-                                                echo '<th class="bg-danger">August</th>';
+                                                echo '<th class="">August</th>';
                                             }
                                             if(9 <= $month){
-                                                echo '<th class="bg-danger">September</th>';
+                                                echo '<th class="">September</th>';
                                             }
                                             if(10 <= $month){
-                                                echo '<th class="bg-danger">October</th>';
+                                                echo '<th class="">October</th>';
                                             }
                                             if(11 <= $month){
-                                                echo '<th class="bg-danger">November</th>';
+                                                echo '<th class="">November</th>';
                                             }
                                             if(12 <= $month){
-                                                echo '<th class="bg-danger">December</th>';
+                                                echo '<th class="">December</th>';
                                             } 
                                             
                                         ?>
@@ -151,6 +152,7 @@ if(isset($_SESSION['id'])){
                                         <th class="bg-danger">Delete</th>
                                     
                                     </tr>
+                                   
                                     <?php
                                         $query = "SELECT * FROM clients";
                                         $results = mysqli_query($conn, $query);
@@ -158,9 +160,9 @@ if(isset($_SESSION['id'])){
                                             foreach($results as $row){
                                                 ?>
                                                 <tr>
-                                                    <td class="text-capitalize"><?= $row['name']; ?></td> 
-                                                    <td class="text-capitalize"><?=$row['plan'];?></td>
-                                                    <td class="text-capitalize"><?=$row['due_date']?></td>
+                                                    <td class="text-uppercase"><?= $row['name']; ?></td> 
+                                                    <td class="text-uppercase"><?=$row['plan'];?></td>
+                                                    <td class="text-uppercase"><?=$row['due_date']?></td>
                                                     <?php 
                                                         if(1 <= $month){?>
                                                             <td class=''><?php if($row['January'] == NULL){ echo '&#8369; 0.00';}else{echo '&#8369; ' .$row['January']. '.00';}  ?></td>
@@ -322,9 +324,6 @@ if(isset($_SESSION['id'])){
                                             <td></td>
                                         </tr>
                                 </table>
-                            <script>
-                                $('#sortTable').DataTable();
-                            </script>
                         </div>
                         </div>
                     </div>
@@ -335,8 +334,6 @@ if(isset($_SESSION['id'])){
                 </div>
             </div>
         </div>
-        
-        
 
         
     </body>
