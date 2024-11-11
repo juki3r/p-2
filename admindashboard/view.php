@@ -101,7 +101,7 @@ if(isset($_SESSION['id'])){
                                                 }
                                             ?> 
                                             class="text-center bg-dark text-light py-2" style="font-size: 18px !important;">Billing</th>
-                                            <th colspan="2" class="text-center bg-warning">Actions</th>
+                                            <th colspan="2" class="text-center bg-warning py-2">Actions</th>
                                         </tr>
                                     
                                     <tr > 
