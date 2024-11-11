@@ -71,7 +71,7 @@ if(isset($_SESSION['id'])){
                                     <caption>Project-2</caption>
                          
                                         <tr > 
-                                            <th colspan="3" class="text-center bg-info" >Clients</th>
+                                            <th colspan="4" class="text-center bg-info" >Clients</th>
                                             <th 
                                             <?php 
                                                 if($month == 1 && $month < 2 ){
@@ -105,6 +105,7 @@ if(isset($_SESSION['id'])){
                                         </tr>
                                     
                                     <tr > 
+                                        <th>No.</th>
                                         <th>Name</th>
                                         <th>Internet Plan</th>
                                         <th>Due date</th>
@@ -160,6 +161,7 @@ if(isset($_SESSION['id'])){
                                             foreach($results as $row){
                                                 ?>
                                                 <tr>
+                                                    <td class="text-uppercase"><?= $row['id']; ?></td> 
                                                     <td class="text-uppercase"><?= $row['name']; ?></td> 
                                                     <td class="text-uppercase"><?=$row['plan'];?></td>
                                                     <td class="text-uppercase"><?=$row['due_date']?></td>
