@@ -105,6 +105,12 @@ if(isset($_SESSION['id'])){
                                     
                                     ?>
                                     <tr>
+                                        <td colspan="7"></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="7"></td>
+                                    </tr>
+                                    <tr>
                                         <td colspan="4">TOTAL EXPENSES</td>
                                         <?php
                                             $query = "SELECT  SUM(total_amount) from expenses";
