@@ -11,15 +11,15 @@ if(isset($_SESSION['id'])){
         $qnty = $_POST['qnty'];
         $price = $_POST['price'];
         $total_amount = $qnty * $price;
-        echo $total_amount;
+   
      
-        // $sql = "INSERT INTO pisowifi (vendo_name) VALUES('$vendo_name')";
-        // $query = mysqli_query($conn, $sql);
-        // if($query){
-        //     echo "<script>alert('Vendo added !')</script>";
-        // }else{
-        //     echo "<script>alert('Please try again !')</script>";
-        // }
+        $sql = "INSERT INTO expenses (description, qnty, price, total_amount) VALUES('$description', '$qnty', '$price', '$total_amount')";
+        $query = mysqli_query($conn, $sql);
+        if($query){
+            echo "<script>alert('Vendo added !')</script>";
+        }else{
+            echo "<script>alert('Please try again !')</script>";
+        }
 
     }
     
