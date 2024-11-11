@@ -7,15 +7,12 @@ if(isset($_SESSION['id'])){
 
     <?php
     if(isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $plan = 'Plan' . ' ' .$_POST['plan'];
-        $due_date = $_POST['due_date'];
-
-        $sql = mysqli_query($conn, "SELECT * from clients WHERE name = '$name'");
+        $vendo_name = $_POST['vendo_name'];
+        $sql = mysqli_query($conn, "SELECT * from clients WHERE vendo_name = '$vendo_name'");
         if (mysqli_num_rows($sql) > 0) {
-            echo "<script>alert('Name already exists !')</script>";
+            echo "<script>alert('Vendo already exists !')</script>";
         }else{
-            $sql = "INSERT INTO clients (name, plan, due_date) VALUES('$name', '$plan', '$due_date')";
+            $sql = "INSERT INTO clients (vendo_name) VALUES('$vendo_name')";
             $query = mysqli_query($conn, $sql);
             if($query){
                 echo "<script>alert('Data added !')</script>";
@@ -43,11 +40,10 @@ if(isset($_SESSION['id'])){
             <div class="container">
                 <div class="row d-flex justify-content-center mt-5">
                     <div class="col-12 col-lg-4 col-md-6 border p-3">
-                        <h3 class="text-center">Add Client</h3>
+                        <h3 class="text-center">Add Vendo</h3>
                         <form action="index.php" method="POST">
-                            <input type="text" name="name" class="form-control my-2 text-capitalize" placeholder="Name" required>
-                            <input type="text" name="plan" class="form-control my-2 text-capitalize" placeholder="Plan" required>
-                            <input type="text" name="due_date" class="form-control my-2 text-capitalize" placeholder="Due date" required>
+                            <input type="text" name="vendo_name" class="form-control my-2 text-capitalize" placeholder="Name" required>
+                           
                             <input type="submit" name="submit" class="form-control bg-primary text-light" value="Submit">
                         </form>
                     </div>
