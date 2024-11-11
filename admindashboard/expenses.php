@@ -105,10 +105,10 @@ if(isset($_SESSION['id'])){
                                     
                                     ?>
                                     <tr>
-                                        <td colspan="7"></td>
+                                    <td colspan="7" style="color:transparent">x</td>
                                     </tr>
                                     <tr>
-                                        <td colspan="7"></td>
+                                    <td colspan="7" style="color:transparent">x</td>
                                     </tr>
                                     <tr>
                                         <td colspan="4">TOTAL EXPENSES</td>
