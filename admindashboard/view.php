@@ -371,8 +371,8 @@ if(isset($_SESSION['id'])){
                                                    
                                                 }
                                             ?>
-                                            <td></td>
-                                            <td></td>
+                                            <td colspan="2"></td>
+                                            
                                         </tr>
                                 </table>
                         </div>
