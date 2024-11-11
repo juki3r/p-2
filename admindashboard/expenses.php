@@ -79,8 +79,8 @@ if(isset($_SESSION['id'])){
                                                     <td class="text-uppercase"><?= $row['id']; ?></td> 
                                                     <td class="text-uppercase"><?= $row['description']; ?></td> 
                                                     <td class="text-uppercase"><?= $row['qnty']; ?></td> 
-                                                    <td class="text-uppercase"><?= $row['price']; ?></td> 
-                                                    <td class="text-uppercase"><?= $row['total_amount']; ?></td> 
+                                                    <td class="text-uppercase">&#8369; <?= $row['price']; ?>.00</td> 
+                                                    <td class="text-uppercase">&#8369; <?= $row['total_amount']; ?>.00</td> 
                                                     <td class="text-center"><a href="edit_expenses.php?id=<?=$row['id']?>">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-square text-success" viewBox="0 0 16 16">
                                                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>

@@ -16,7 +16,7 @@ if(isset($_SESSION['id'])){
         $sql = "INSERT INTO expenses (description, qnty, price, total_amount) VALUES('$description', '$qnty', '$price', '$total_amount')";
         $query = mysqli_query($conn, $sql);
         if($query){
-            echo "<script>alert('Vendo added !')</script>";
+            echo "<script>alert('Expenses added !')</script>";
         }else{
             echo "<script>alert('Please try again !')</script>";
         }
