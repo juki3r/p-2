@@ -46,7 +46,7 @@ if(isset($_SESSION['id'])){
                         <div class="card-header">
                             <h3 class="px-1">
                                 PISOWIFI
-                                <a href="index.php" class="btn btn-primary btn-sm float-end">ADD</a>
+                                <a href="add_pisowifi.php" class="btn btn-primary btn-sm float-end">ADD</a>
                             </h3>
                         </div>
                         <div class="card-body p-2">
