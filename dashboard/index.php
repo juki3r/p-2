@@ -85,7 +85,7 @@ if(isset($_SESSION['id'])){
                                                 }
                                             ?> 
                                             class="text-center text-light py-3" style="font-size: 20px !important; background-color:#740938;">Billing</th>
-                                            <th colspan="2" class="text-center py-3 text-light" style="font-size: 20px !important; background-color:#433878;">Actions</th>
+                                            <th colspan="2" class="text-center py-3 text-light" style="font-size: 20px !important; background-color:#433878;">Remarks</th>
                                         </tr>
                                     
                                     <tr > 
@@ -133,8 +133,7 @@ if(isset($_SESSION['id'])){
                                             
                                         ?>
         
-                                        <th class="text-success">Update</th>
-                                        <th class="text-danger">Delete</th>
+                                        <th colspan="2" class="text-success">Active</th>
                                     
                                     </tr>
                                    
