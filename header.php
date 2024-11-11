@@ -29,17 +29,24 @@
 </nav>
 
 <script>
-   $(function () {
-  // this will get the full URL at the address bar
-  var url = window.location.href;
-  // passes on every "a" tag
-  $(".navbar-nav .nav-link").each(function () {
-    // checks if its the same on the address bar
-    if (url == (this.href)) {
-      $(this).closest("li").addClass("active");
-      //for making parent of submenu active
-      $(this).closest("li").parent().parent().addClass("active");
-    }
-  });
-});
+   var navlnks = document.querySelectorAll(".nav a");
+        Array.prototype.map.call(navlnks, function(item) {
+
+            item.addEventListener("click", function(e) {
+
+                var navlnks = document.querySelectorAll(".nav a"); 
+
+                Array.prototype.map.call(navlnks, function(item) {
+
+                    if (item.parentNode.className == "active" || item.parentNode.className == "active open" ) {
+
+                        item.parentNode.className = "";
+
+                    } 
+
+                }); 
+
+                e.currentTarget.parentNode.className = "active";
+            });
+        });
 </script>
