@@ -102,7 +102,16 @@ if(isset($_SESSION['id'])){
                                                 </tr>
                                                 <tr>
                                                     <td colspan="4">TOTAL EXPENSES</td>
-                                                    <td>Tttt</td>
+                                                    <?php
+                                                        $query = "SELECT  SUM(total_amount)
+                                                                            from expenses";
+                                                        $query_run = mysqli_query($conn, $query);
+
+                                                        while($row = mysqli_fetch_array($query_run)){
+                                                            echo '<td>'.$row['total_amount'].'</td>';
+                                                        
+                                                        }
+                                                    ?>
                                                     <td colspan="2"></td>
                                                 </tr>
                                                 <?php
