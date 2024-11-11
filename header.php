@@ -1,8 +1,7 @@
 <style>
     #logo{
         width: 130px;
-        height: 80;
-        background-color: red;
+        height: 100;
     }
     
 </style>
