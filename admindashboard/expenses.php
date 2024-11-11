@@ -94,6 +94,17 @@ if(isset($_SESSION['id'])){
                                                     </svg>
                                                     </a></td>
                                                 </tr>
+                                                <tr>
+                                                    <td colspan="7"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="7"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="4">TOTAL EXPENSES</td>
+                                                    <td>Tttt</td>
+                                                    <td colspan="2"></td>
+                                                </tr>
                                                 <?php
                                             }
                                         }else{
