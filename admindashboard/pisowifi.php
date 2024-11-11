@@ -217,7 +217,7 @@ if(isset($_SESSION['id'])){
                                     
                                         ?>
                                         <tr class="mt-4" >
-                                            <td colspan="4" style="color:transparent">x</td>
+                                            <td colspan="2" style="color:transparent">x</td>
                                             <td class="text-center bg-warning">&#8595;</td>
                                             <td class="text-center bg-warning">&#8595;</td>
                                             <td class="text-center bg-warning">&#8595;</td>
@@ -232,7 +232,7 @@ if(isset($_SESSION['id'])){
                                             <td colspan="2" style="color:transparent">x</td>
                                         </tr>
                                         <tr class="mt-4" >
-                                        <td colspan="4" style="color:transparent">x</td>
+                                        <td colspan="2" style="color:transparent">x</td>
                                             <td class="text-center bg-warning">&#8595;</td>
                                             <td class="text-center bg-warning">&#8595;</td>
                                             <td class="text-center bg-warning">&#8595;</td>
@@ -247,7 +247,7 @@ if(isset($_SESSION['id'])){
                                             <td colspan="2" style="color:transparent">x</td>
                                         </tr>
                                         <tr class="mt-4">
-                                            <td colspan="4" class="text-center">SUM</td>
+                                            <td colspan="2" class="text-center">SUM</td>
 
                                             <?php
                                                 $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
@@ -300,7 +300,7 @@ if(isset($_SESSION['id'])){
                                           
                                         </tr>
                                         <tr class="mt-4" style="border: 1px solid black;">
-                                            <td colspan="4" class="text-center bg-success text-light py-2">TOTAL</td>
+                                            <td colspan="2" class="text-center bg-success text-light py-2">TOTAL</td>
 
                                             <?php
                                                 $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
