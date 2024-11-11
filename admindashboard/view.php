@@ -321,8 +321,8 @@ if(isset($_SESSION['id'])){
                                             <td></td>
                                             <td></td>
                                         </tr>
-                                        <tr class="mt-4 bg-success">
-                                            <td colspan="4" class="text-center">TOTAL</td>
+                                        <tr class="mt-4">
+                                            <td colspan="4" class="text-center bg-success">TOTAL</td>
 
                                             <?php
                                                 $query = "SELECT  SUM(January), SUM(Febuary), SUM(March), SUM(April),
