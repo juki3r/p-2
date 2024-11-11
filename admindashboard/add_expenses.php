@@ -10,8 +10,8 @@ if(isset($_SESSION['id'])){
         $description = $_POST['description'];
         $qnty = $_POST['qnty'];
         $price = $_POST['price'];
-
-        echo $price;
+        $total_amount = $qnty * $price;
+        echo $total_amount;
      
         // $sql = "INSERT INTO pisowifi (vendo_name) VALUES('$vendo_name')";
         // $query = mysqli_query($conn, $sql);
