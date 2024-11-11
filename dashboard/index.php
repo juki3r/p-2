@@ -45,7 +45,7 @@ if(isset($_SESSION['id'])){
                     <div class="card mb-5">
                         <div class="card-header">
                             <h3 class="px-1">
-                                INTERNET SUBSCRIBERS
+                                CLIENTS
                                 <a href="pisowifi.php" class="btn btn-primary btn-sm float-end">Next</a>
                             </h3>
                         </div>
