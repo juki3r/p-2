@@ -59,7 +59,7 @@ if(isset($_SESSION['id'])){
                         <div class="card-body p-2">
                             <div class="table-responsive border rounded shadow p-4 my-3" style="height: 100%; background-color:#D3D3D3;">
                                 <table class="table table-bordered table-striped table-hover text-nowrap table-sm">
-                                    <caption>Project-2</caption>
+                                    <caption>Project-bravo</caption>
                          
                                         <tr > 
                                             <th colspan="2" class="text-center text-light py-3" style="font-size: 20px !important; background-color:#091057">VENDO</th>
