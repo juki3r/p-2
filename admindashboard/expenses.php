@@ -120,7 +120,7 @@ if(isset($_SESSION['id'])){
                                                
                                                 echo '<td colspan="3">&#8369; '.$row['SUM(total_amount)'].'.00</td>';
                                                 $totalX= $row['SUM(total_amount)'];
-                                                $total_expenses = "INSERT INTO capital (total_expenses) VALUES ('$totalX') where capital='2000000' ";
+                                                $total_expenses = "INSERT INTO capital (total_expenses) VALUES ('$totalX') where id='1' ";
                                                 $resultX = mysqli_query($conn, $total_expenses); 
                                             }
                                         ?>
