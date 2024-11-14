@@ -87,7 +87,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 }
 #logo{
     width: 120px;
-    height: 80px;
+    height: 100px;
 }
 #login{
     padding: 0;
@@ -98,7 +98,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 <body>
     <div class="container">
         <div class="row h-100 w-100 d-flex justify-content-center align-items-center">
-            <div class="col-12 col-lg-4 col-md-7 border shadow rounded">
+            <div class="col-12 col-lg-4 col-md-7 border shadow rounded p-3">
                 <div class="text-center w-100">
                     <img src="assets/images/logo.jpg" alt="logo" id="logo">
                 </div>
