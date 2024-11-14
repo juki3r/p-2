@@ -119,7 +119,9 @@ if(isset($_SESSION['id'])){
                                             while($row = mysqli_fetch_array($query_run)){
                                                
                                                 echo '<td colspan="3">&#8369; '.$row['SUM(total_amount)'].'.00</td>';
-                                            
+                                                $totalX= $row['SUM(total_amount)'];
+                                                $total_expenses = "INSERT INTO capital (total_expeses) VALUES ('$totalX') where capital='2000000' ";
+                                                $resultX = mysqli_query($conn, $total_expenses); 
                                             }
                                         ?>
                                     </tr>
