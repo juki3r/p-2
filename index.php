@@ -105,8 +105,8 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                 <form action="index.php" method="POST" class="p-3" style="margin-top: -20px;">
                 <?php if(isset($_GET['error'])){?> <p class="error p-0 m-0 text-danger"> <?php echo $_GET['error']; ?> </p> <?php }?>
                     <input class="form-control p-1" type="text" name="username" placeholder="Username" required>
-                    <input class="form-control p-1" type="text" name="password" placeholder="Password" required>
-                    <input class="form-control mt-4 p-1 bg-primary text-white" type="submit" name="submit" value="Submit">
+                    <input class="form-control p-1 mt-3" type="text" name="password" placeholder="Password" required>
+                    <input class="form-control mt-3 p-1 bg-primary text-white" type="submit" name="submit" value="Submit">
                     <p class="py-0 mt-3" style="font-size: 12px;">Forgot password? <a href="" onclick="forgotPassword()">Click here</a></p>
                 </form>
             </div>
