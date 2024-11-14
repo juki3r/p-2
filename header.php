@@ -42,7 +42,7 @@
         </li>
         <li class="nav-item">
           <?php if($_SESSION['usertype'] == 'investor'){
-            //  echo '<a class="nav-link" href="expenses.php">EXPENSES</a>';
+             echo '<a class="nav-link" href="balance.php">Balance</a>';
              }else{ 
               echo '<a class="nav-link" href="expenses.php">EXPENSES</a>';
               } 
