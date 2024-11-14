@@ -71,7 +71,7 @@ if(isset($_SESSION['id'])){
                                             foreach($results as $row){
                                                 ?>
                                                 <tr>
-                                                    <td class="text-uppercase"><?= $row['capital']; ?></td> 
+                                                <td class="text-uppercase">&#8369; <?= $row['capital']; ?>.00</td> 
                                                     <td class="text-uppercase">&#8369; <?= $row['total_expenses']; ?>.00</td> 
                                                     <td class="text-uppercase">&#8369; <?= $row['balance']; ?>.00</td> 
                                                 </tr>
