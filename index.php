@@ -99,15 +99,13 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     <div class="container">
         <div class="row h-100 w-100 d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-4 col-md-7 border shadow rounded p-3">
-                <div class="text-center w-100 p-0 m-0 bg-info">
+                <div class="text-center w-100 p-0 m-0">
                     <img src="assets/images/logo.jpg" alt="logo" id="logo">
                 </div>
                 <form action="index.php" method="POST" class="p-3" style="margin-top: -20px;">
                 <?php if(isset($_GET['error'])){?> <p class="error p-0 m-0 text-danger"> <?php echo $_GET['error']; ?> </p> <?php }?>
-                    <label for="username" class="m-0 mt-2">Username</label>
-                    <input class="form-control p-1" type="text" name="username" required>
-                    <label for="username" class="m-0 mt-2">Password</label>
-                    <input class="form-control p-1" type="text" name="password" required>
+                    <input class="form-control p-1" type="text" name="username" placeholder="Username" required>
+                    <input class="form-control p-1" type="text" name="password" placeholder="Password" required>
                     <input class="form-control mt-4 p-1 bg-primary text-white" type="submit" name="submit" value="Submit">
                     <p class="py-0 mt-3" style="font-size: 12px;">Forgot password? <a href="" onclick="forgotPassword()">Click here</a></p>
                 </form>
