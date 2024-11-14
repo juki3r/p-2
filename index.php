@@ -40,7 +40,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                 if($row['usertype'] == 'investor'){
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['usertype'] = $row['usertype'];
-                    $sql = mysqli_query($conn, "UPDATE user SET login='yes' WHERE username='$username'");
+                    $sql = mysqli_query($conn, "UPDATE user SET login='no' WHERE username='$username'");
                     header("Location: dashboard");
                     exit();
                 }else{
