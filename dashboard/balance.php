@@ -50,7 +50,7 @@ if(isset($_SESSION['id'])){
                     <div class="card mb-5">
                         <div class="card-header">
                             <h3 class="px-1">
-                                EXPENSES
+                                PROJECT CAPITAL
                                 <a href="pisowifi.php" class="btn btn-primary btn-sm float-end">Back</a>
                             </h3>
                         </div>
@@ -59,26 +59,21 @@ if(isset($_SESSION['id'])){
                                 <table class="table table-bordered table-striped table-hover text-nowrap table-sm">
                                     <caption>Project-bravo</caption>
                                     <tr > 
-                                        <th>No.</th>
-                                        <th>Description</th>
-                                        <th>Quantity</th>
-                                        <th>Price</th>
-                                        <th>Total amount</th>
-                                    
+                                        <th>Project Capital</th>
+                                        <th>Total Expenses</th>
+                                        <th>BALANCE</th>
                                     </tr>
                                    
                                     <?php
-                                        $query = "SELECT * FROM expenses";
+                                        $query = "SELECT * FROM capital";
                                         $results = mysqli_query($conn, $query);
                                         if(mysqli_num_rows($results) > 0){
                                             foreach($results as $row){
                                                 ?>
                                                 <tr>
-                                                    <td class="text-uppercase"><?= $row['id']; ?></td> 
-                                                    <td class="text-uppercase"><?= $row['description']; ?></td> 
-                                                    <td class="text-uppercase"><?= $row['qnty']; ?></td> 
-                                                    <td class="text-uppercase">&#8369; <?= $row['price']; ?>.00</td> 
-                                                    <td class="text-uppercase">&#8369; <?= $row['total_amount']; ?>.00</td> 
+                                                    <td class="text-uppercase"><?= $row['capital']; ?></td> 
+                                                    <td class="text-uppercase">&#8369; <?= $row['total_expenses']; ?>.00</td> 
+                                                    <td class="text-uppercase">&#8369; <?= $row['balance']; ?>.00</td> 
                                                 </tr>
                                                 <?php
                                                 
@@ -88,27 +83,7 @@ if(isset($_SESSION['id'])){
                                             echo "<h5>No record found</h5>";
                                         }
                                     
-                                    ?>
-                                    <tr>
-                                    <td colspan="5" style="color:transparent">x</td>
-                                    </tr>
-                                    <tr>
-                                    <td colspan="5" style="color:transparent">x</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="4">TOTAL EXPENSES</td>
-                                        <?php
-                                            $query = "SELECT  SUM(total_amount) from expenses";
-                                            $query_run = mysqli_query($conn, $query);
-
-                                            while($row = mysqli_fetch_array($query_run)){
-                                                echo '<td colspan="1">&#8369; '.$row['SUM(total_amount)'].'.00</td>';
-                                            
-                                            }
-                                        ?>
-                                    </tr>
-                                       
-                                       
+                                    ?>                                     
                                 </table>
                         </div>
                         </div>
