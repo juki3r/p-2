@@ -102,7 +102,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                 <div class="text-center w-100 p-0 m-0 bg-info">
                     <img src="assets/images/logo.jpg" alt="logo" id="logo">
                 </div>
-                <form action="index.php" method="POST" class="p-3 mt-0" style="margin-top: -20px;">
+                <form action="index.php" method="POST" class="p-3" style="margin-top: -20px;">
                 <?php if(isset($_GET['error'])){?> <p class="error p-0 m-0 text-danger"> <?php echo $_GET['error']; ?> </p> <?php }?>
                     <label for="username" class="m-0 mt-2">Username</label>
                     <input class="form-control p-1" type="text" name="username" required>
