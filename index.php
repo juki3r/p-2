@@ -99,7 +99,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
     <div class="container">
         <div class="row h-100 w-100 d-flex justify-content-center align-items-center">
             <div class="col-12 col-lg-4 col-md-7 border shadow rounded p-3">
-                <div class="text-center w-100 p-0 m-0">
+                <div class="text-center w-100 p-0 m-0 bg-info">
                     <img src="assets/images/logo.jpg" alt="logo" id="logo">
                 </div>
                 <form action="index.php" method="POST" class="p-3 mt-0">
