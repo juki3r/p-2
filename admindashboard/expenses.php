@@ -120,7 +120,8 @@ if(isset($_SESSION['id'])){
                                                
                                                 echo '<td colspan="3">&#8369; '.$row['SUM(total_amount)'].'.00</td>';
                                                 $totalX= $row['SUM(total_amount)'];
-                                                $total_expenses = "UPDATE capital SET total_expenses='$totalX' where id='1' ";
+                                                $balance = 2000000 - $totalX;
+                                                $total_expenses = "UPDATE capital SET total_expenses='$totalX', balance='$balance' where id='1' ";
                                                 $resultX = mysqli_query($conn, $total_expenses); 
                                             }
                                         ?>
