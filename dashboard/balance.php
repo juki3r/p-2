@@ -51,7 +51,7 @@ if(isset($_SESSION['id'])){
                         <div class="card-header">
                             <h3 class="px-1">
                                 PROJECT CAPITAL
-                                <a href="pisowifi.php" class="btn btn-primary btn-sm float-end">Back</a>
+                                <a href="expenses.php" class="btn btn-primary btn-sm float-end">Back</a>
                             </h3>
                         </div>
                         <div class="card-body p-2">
