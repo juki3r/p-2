@@ -97,7 +97,8 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 </head>
 <body>
     <div class="container">
-        <div class="row border rounded shadow p-0 px-lg-4 pb-3 text-light" style="  background-color: black;">
+        <div class="row h-100 d-flex justify-content-center align-items-center">
+            <div class="col-12 col-lg-5 col-md-7">
             <div class="text-center w-100">
                 <img src="assets/images/logo.jpg" alt="logo" id="logo">
                 <h3 id="login">Login 
@@ -107,7 +108,6 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                     </svg>
                 </h3>
             </div>
-            <div class="col-12">
                 <form action="index.php" method="POST">
                 <?php if(isset($_GET['error'])){?> <p class="error p-0 m-0 text-danger"> <?php echo $_GET['error']; ?> </p> <?php }?>
                     <label for="username" class="m-0 mt-2">Username</label>
