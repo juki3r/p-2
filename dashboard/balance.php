@@ -75,9 +75,7 @@ if(isset($_SESSION['id'])){
                                                     <td class="text-uppercase">&#8369; <?= $row['total_expenses']; ?>.00</td> 
                                                     <td class="text-uppercase">&#8369; <?= $row['balance']; ?>.00</td> 
                                                 </tr>
-                                                <?php
-                                                
-                                                
+                                                <?php    
                                             }
                                         }else{
                                             echo "<h5>No record found</h5>";
