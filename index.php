@@ -97,7 +97,7 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 </head>
 <body>
     <div class="container">
-        <div class="row h-100 d-flex justify-content-center align-items-center">
+        <div class="row h-100 d-flex justify-content-center align-items-center bg-info">
             <div class="col-12 col-lg-5 col-md-7">
             <div class="text-center w-100">
                 <img src="assets/images/logo.jpg" alt="logo" id="logo">
